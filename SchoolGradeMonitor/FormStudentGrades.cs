@@ -33,7 +33,6 @@ namespace SchoolGradeMonitor
             DgvStudentGrades.DataSource = dataTable;
 
             sqlConnection.Close();
-
         }
     }
 }

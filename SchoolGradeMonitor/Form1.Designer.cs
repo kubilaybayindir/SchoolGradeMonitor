@@ -73,6 +73,7 @@
             this.PbTeacher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbTeacher.TabIndex = 2;
             this.PbTeacher.TabStop = false;
+            this.PbTeacher.Click += new System.EventHandler(this.PbTeacher_Click);
             // 
             // label1
             // 
@@ -116,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(442, 370);
             this.Controls.Add(this.TbxId);
@@ -125,7 +127,8 @@
             this.Controls.Add(this.PbTeacher);
             this.Controls.Add(this.PbStudent);
             this.Controls.Add(this.BtGenerator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

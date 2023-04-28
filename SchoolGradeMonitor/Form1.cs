@@ -21,7 +21,7 @@ namespace SchoolGradeMonitor
         private void BtGenerator_Click(object sender, EventArgs e)
         {
             Generator generator = new Generator();
-            generator.StudentGenerate();
+            generator.GenerateTenTeacher();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,6 +34,12 @@ namespace SchoolGradeMonitor
             FormStudentGrades formStudentGrades = new FormStudentGrades();
             formStudentGrades.StudentId = TbxId.Text;
             formStudentGrades.Show();
+        }
+
+        private void PbTeacher_Click(object sender, EventArgs e)
+        {
+            FormTeacher formTeacher = new FormTeacher();
+            formTeacher.Show();
         }
     }
 }
